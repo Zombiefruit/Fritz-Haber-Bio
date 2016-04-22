@@ -1,7 +1,8 @@
 /* Space out content a bit */
 body {
+  position: relative;
   padding-top: 20px;
-  padding-bottom: 35px;
+  padding-bottom: 45px;
 }
 
 /* I want the navbar to stay in front of other elements and to have a white background */
@@ -19,20 +20,30 @@ body {
   box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.5);
 }
 
+.lead {
+  padding-top: 10px;
+}
+
+#intro-title {
+  margin-top: 0px;
+}
+
 .center-pill {
   display: flex;
   justify-content: center;
+  padding-left: -10px;
+  padding-right: -10px;
 }
 
 /* This styling offsets the anchor link to compensate for the fixed navbar */
-a.anchor {
+.anchor {
     display: block;
     position: relative;
     top: -125px;
-    visibility: hidden;
+    /*visibility: hidden;*/
 }
 
-a.anchor-top {
+.anchor-top {
     display: block;
     position: relative;
     top: -150px;

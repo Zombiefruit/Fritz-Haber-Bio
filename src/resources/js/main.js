@@ -1,40 +1,22 @@
 // VERY, VERY, VERY INNEFFICIENT CODE - PLACEHOLDER, STILL LEARNING
 
 $(document).ready(function() {
-  function scrollToAnchor(aid){
-    var aTag = $("a[name='"+ aid +"']");
-    $('html,body').animate({scrollTop: aTag.offset().top},'fast');
-}
 
-  $('#pill1').click(function (){
-    $(this).addClass('active');
-    scrollToAnchor('intro');
-    $("#pill2").removeClass('active');
-    $("#pill3").removeClass('active');
-    $("#pill4").removeClass('active');
+  // Code "borrowed" and modified from here: http://stackoverflow.com/questions/17879846/bootstrap-scrollspy-offset-on-a-fixed-navbar-does-not-work
+  var offsetHeight = 110;
+
+  $('body').scrollspy({
+      offset: offsetHeight
   });
 
-  $('#pill2').click(function (){
-    $(this).addClass('active');
-    scrollToAnchor('early_life');
-    $("#pill1").removeClass('active');
-    $("#pill3").removeClass('active');
-    $("#pill4").removeClass('active');
-  });
+  console.log("here");
 
-  $('#pill3').click(function (){
-    $(this).addClass('active');
-    scrollToAnchor('career');
-    $("#pill1").removeClass('active');
-    $("#pill2").removeClass('active');
-    $("#pill4").removeClass('active');
-  });
-
-  $('#pill4').click(function (){
-    $(this).addClass('active');
-    scrollToAnchor('legacy');
-    $("#pill1").removeClass('active');
-    $("#pill2").removeClass('active');
-    $("#pill3").removeClass('active');
+  $('.header li a').click(function (event) {
+    console.log("here");
+      var scrollPos = $('body > .container').find($(this).attr('href')).offset().top - (offsetHeight - 1);
+      $('body,html').animate({
+          scrollTop: scrollPos
+      }, 500);
+      return false;
   });
 });

@@ -17,99 +17,133 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- This is the main stylesheet for my own stylings -->
-    <link href="resources/css/main_stylesheet.css" rel="stylesheet" >
+    <link href="resources/css/main_stylesheet.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]-->
   </head>
 
+  <!--data-offset="115" data-target="#nav-bar" data-spy="scroll"-->
   <body>
 
     <!-- This is the start of the html section -->
     <div class="container">
-        <!-- navigation section -->
-        <div id="cheat-container">
-          <div id="navbar" class="header clearfix well">
-            <nav>
+      <!-- navigation section -->
+      <div id="cheat-container">
+        <div id="navbar" class="header clearfix well">
+          <div id="nav-bar">
+            <!--<nav>-->
               <ul id="test" class="nav nav-pills center-pill">
-                <li id="pill1" role="presentation" class="active"><a href="#">Intro</a></li>
-                <li id="pill2" role="presentation"><a href="#">Early Life</a></li>
-                <li id="pill3" role="presentation"><a href="#career">Career</a></li>
-                <li id="pill4" role="presentation"><a href="#legacy">Legacy</a></li>
+                <li id="pill1" role="presentation" class="active">
+                  <a href="#intro" data-scroll="#intro">Intro</a>
+                </li>
+                <li id="pill2" role="presentation">
+                  <a href="#early" data-scroll="#early">Early Life</a>
+                </li>
+                <li id="pill3" role="presentation">
+                  <a href="#car" data-scroll="#car">Career</a>
+                </li>
+                <li id="pill4" role="presentation">
+                  <a href="#leg">Legacy</a>
+                </li>
               </ul>
-            </nav>
+            <!--</nav>-->
             <!--<h3 class="text-muted centered">Project name</h3>-->
           </div>
         </div>
-    <div id="main-container">
-        <div class="jumbotron">
-          <a class="anchor-top" name="intro"></a>
+      </div>
+
+      <div id="main-container">
+        <div class="jumbotron" id="intro">
+          <a class="anchor-top" name="iro"></a>
           <h1>Fritz Haber</h1>
-          <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Fritz_Haber.png" class="img-responsive img-thumbnail" alt="A portrait photograph of Fritz Haber, a bald man with glasses and a moustache"/>
+          <p class="lead">
+            Fritz Haber received the 1918 Nobel Prize in Chemisty for his invention of the <a href="https://en.wikipedia.org/wiki/Haber-Bosch_process">Haber-Bosch process</a>, a novel way to synthesize
+            industrial quantities of ammonia, used as both a major component in
+            fertilizer and in explosives. Haber is also considered the "father of chemical
+            warfare" for his years of pioneering work developing and weaponizing chlorine
+            and other poisonous gases during <a href="https://en.wikipedia.org/wiki/World_War_I">World War 1</a>, especially his actions during
+            the <a href="https://en.wikipedia.org/wiki/Second_Battle_of_Ypres">Second Battle of Ypres</a>.
+          </p>
+          <p>
+            Half of the world's food supply depends upon the Haber-Bosch process,
+            and widespread availability of fertilizer has saved billions from starvation
+            over the last century. However, Haber was fanatically devoted to his chemical
+            weapons, and still supported their use in war even after seeing the damage
+            caused on the human body. He was truly the archetypal mad scientist.
+          </p>
         </div>
 
         <div class="row marketing">
-          <div class="col-lg-6 well">
+          <div class="col-lg-6 well" id="early">
             <a class="anchor" name="early_life"></a>
             <h2>Early Life</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-            <h4>Subheading</h4>
-            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-            <h4>Subheading</h4>
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            <p>Fritz Haber was born in Breslau, in eastern <a href="https://en.wikipedia.org/wiki/Kingdom_of_Prussia">Prussia</a>
+              (now <a href="https://en.wikipedia.org/wiki/Wroc%C5%82aw">Wrocław</a>, in western Poland), into a well-off Jewish family.
+            The family name Haber was a common one in the area, but Fritz Haber's
+            family has been traced back to a great-grandfather, Pinkus Selig Haber,
+            a wool dealer from <a href="https://en.wikipedia.org/wiki/K%C4%99pno">Kempen</a>.
+            An important Prussian edict of 13 March 1812 determined that Jews and their families,
+            including Pinkus Haber, were "to be treated as local citizens and citizens of Prussia".
+            Under such regulations, members of the Haber family were able to establish themselves in
+            respected positions in business, politics, and law.
+            </p>
           </div>
 
-          <div class="col-lg-6 well">
+          <div class="col-lg-6 well" id="car">
             <a class="anchor" name="career"></a>
             <h2>Career</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-            <h4>Subheading</h4>
-            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-            <h4>Subheading</h4>
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            <p>An important Prussian edict of 13 March 1812 determined that Jews and their families,
+            including Pinkus Haber, were "to be treated as local citizens and citizens of Prussia".
+            Under such regulations, members of the Haber family were able to establish themselves in
+            respected positions in business, politics, and law.
+            An important Prussian edict of 13 March 1812 determined that Jews and their families,
+            including Pinkus Haber, were "to be treated as local citizens and citizens of Prussia".
+            Under such regulations, members of the Haber family were able to establish themselves in
+            respected positions in business, politics, and law.
+            An important Prussian edict of 13 March 1812 determined that Jews and their families,
+            including Pinkus Haber, were "to be treated as local citizens and citizens of Prussia".
+            Under such regulations, members of the Haber family were able to establish themselves in
+            respected positions in business, politics, and law.
+            </p>
           </div>
 
-          <div class="col-lg-6 well">
+          <div class="col-lg-6 well" id="leg">
             <a class="anchor" name="legacy"></a>
             <h2>Legacy</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-            <h4>Subheading</h4>
-            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-            <h4>Subheading</h4>
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            <p>An important Prussian edict of 13 March 1812 determined that Jews and their families,
+            including Pinkus Haber, were "to be treated as local citizens and citizens of Prussia".
+            Under such regulations, members of the Haber family were able to establish themselves in
+            respected positions in business, politics, and law.
+            An important Prussian edict of 13 March 1812 determined that Jews and their families,
+            including Pinkus Haber, were "to be treated as local citizens and citizens of Prussia".
+            Under such regulations, members of the Haber family were able to establish themselves in
+            respected positions in business, politics, and law.
+            </p>
           </div>
         </div>
 
         <div id="wiki-button" class="centered">
-          <p><a class="btn btn-lg btn-success" href="#" role="button">Check out Haber's Wiki!</a></p>
+          <p>
+            <a class="btn btn-lg btn-success" href="#" role="button">Check out Haber's Wiki!</a>
+          </p>
         </div>
 
-
         <footer class="footer">
-          <p>&copy; ?????.</p>
+          <p>&copy; Kieran Williams, but pretty much all text copied straight from the wiki article.</p>
         </footer>
 
-
       </div>
-    </div> <!-- end of the fluid container - this wraps the whole html frame -->
-
+    </div>
+    <!-- end of the fluid container - this wraps the whole html frame -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins)
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     -->
     <!-- JQuery version 2.2.3, little more updated that 1.11.3-->
-    <script src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
