@@ -7,8 +7,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="A short biography created for the free code camp front-end project series">
     <meta name="author" content="Kieran Williams">
-    <!-- link some icon for the header here -->
-    <link rel="icon" href="../../favicon.ico">
+    <!-- link some icon for the header here
+    TODO: This <link rel="icon" href="ion-icon" />
+    -->
 
     <title>Fritz Haber Biography</title>
 
@@ -25,26 +26,95 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <div class="fluid-container well">
-      <div class="row">
-        <h1 class="text-primary">Hello, world!</h1>
-      </div>
 
-    </div>
+  <body>
+
+    <!-- This is the start of the html section -->
+    <div class="container">
+        <!-- navigation section -->
+        <div id="cheat-container">
+          <div id="navbar" class="header clearfix well">
+            <nav>
+              <ul id="test" class="nav nav-pills center-pill">
+                <li id="pill1" role="presentation" class="active"><a href="#">Intro</a></li>
+                <li id="pill2" role="presentation"><a href="#">Early Life</a></li>
+                <li id="pill3" role="presentation"><a href="#career">Career</a></li>
+                <li id="pill4" role="presentation"><a href="#legacy">Legacy</a></li>
+              </ul>
+            </nav>
+            <!--<h3 class="text-muted centered">Project name</h3>-->
+          </div>
+        </div>
+    <div id="main-container">
+        <div class="jumbotron">
+          <a class="anchor-top" name="intro"></a>
+          <h1>Fritz Haber</h1>
+          <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
+
+        <div class="row marketing">
+          <div class="col-lg-6 well">
+            <a class="anchor" name="early_life"></a>
+            <h2>Early Life</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+            <h4>Subheading</h4>
+            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+            <h4>Subheading</h4>
+            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          </div>
+
+          <div class="col-lg-6 well">
+            <a class="anchor" name="career"></a>
+            <h2>Career</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+            <h4>Subheading</h4>
+            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+            <h4>Subheading</h4>
+            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          </div>
+
+          <div class="col-lg-6 well">
+            <a class="anchor" name="legacy"></a>
+            <h2>Legacy</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+            <h4>Subheading</h4>
+            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+            <h4>Subheading</h4>
+            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          </div>
+        </div>
+
+        <div id="wiki-button" class="centered">
+          <p><a class="btn btn-lg btn-success" href="#" role="button">Check out Haber's Wiki!</a></p>
+        </div>
+
+
+        <footer class="footer">
+          <p>&copy; ?????.</p>
+        </footer>
+
+
+      </div>
+    </div> <!-- end of the fluid container - this wraps the whole html frame -->
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins)
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     -->
     <!-- JQuery version 2.2.3, little more updated that 1.11.3-->
-    <script   src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
 
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
     <!-- This is the main entry point for the javascript stuff - I try to make it easy :) -->
-    <script src="resources/js/main.js"></script>
+    <script type="text/javascript" src='resources/js/main.js'></script>
   </body>
 </html>
