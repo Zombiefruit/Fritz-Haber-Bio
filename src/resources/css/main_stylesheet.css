@@ -2,10 +2,12 @@
 body {
   position: relative;
   padding-top: 20px;
-  padding-bottom: 45px;
+  /* This just makes sure that the scroll can continue past the last text division
+   and that the scrollSpy can function as intended. Issues arise with a short Legacy section. */
+  padding-bottom: 45%;
 }
 
-/* I want the navbar to stay in front of other elements and to have a white background */
+/* I want the navbar to stay in front of other elements and to have a white gradient background */
 #navbar {
   z-index: 2031; position: fixed;
   /*margin-top: 0px;*/
