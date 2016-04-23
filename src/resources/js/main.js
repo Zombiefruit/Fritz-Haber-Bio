@@ -1,5 +1,3 @@
-// VERY, VERY, VERY INNEFFICIENT CODE - PLACEHOLDER, STILL LEARNING
-
 $(document).ready(function() {
   // Set the attribute "target" equal to "_blank" for every anchor tag. Why?
   // This forces every link to open in a new tab (well, this actually depends on
