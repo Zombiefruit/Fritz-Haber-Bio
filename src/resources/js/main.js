@@ -12,7 +12,6 @@ $(document).ready(function() {
   });
 
   $('.header li a').click(function (event) {
-    console.log("here");
       var scrollPos = $('body > .container').find($(this).attr('href')).offset().top - (offsetHeight - 1);
       $('body,html').animate({
           scrollTop: scrollPos
